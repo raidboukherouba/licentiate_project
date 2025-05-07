@@ -1,0 +1,328 @@
+{
+    "error": {
+        "FailedCreateCategory": "فشل في إنشاء الفئة",
+        "CategoryExists": "اسم الفئة موجود بالفعل",
+        "CategoryNotFound": "لم يتم العثور على الفئة",
+        "CannotDeleteCategory": "لا يمكن حذف الفئة، تحتوي على سجلات مرتبطة في جداول أخرى",
+        
+        "FailedCreateDepartment": "فشل في إنشاء القسم",
+        "DepartmentExists": "اسم القسم موجود بالفعل",
+        "InvalidDepartmentId": "معرّف القسم غير صالح",
+        "DepartmentNotFound": "لم يتم العثور على القسم",
+        "CannotDeleteDepartment": "لا يمكن حذف القسم، يحتوي على سجلات مرتبطة في جداول أخرى",
+
+        "FailedCreateDomain": "فشل في إنشاء المجال",
+        "DomainExists": "اسم المجال موجود بالفعل",
+        "InvalidDomainId": "معرّف المجال غير صالح",
+        "DomainNotFound": "لم يتم العثور على المجال",
+        "CannotDeleteDomain": "لا يمكن حذف المجال، يحتوي على سجلات مرتبطة في جداول أخرى",
+        
+        "FailedCreateFaculty": "فشل في إنشاء الكلية",
+        "FacultyExists": "اسم الكلية موجود بالفعل",
+        "InvalidFacultyId": "معرّف الكلية غير صالح",
+        "FacultyNotFound": "الكلية غير موجودة",
+        "CannotDeleteFaculty": "لا يمكن حذف الكلية، لديها سجلات مرتبطة في جداول أخرى",
+    
+        "FailedCreateFunction": "فشل في إنشاء الوظيفة",
+        "FunctionExists": "اسم الوظيفة موجود بالفعل",
+        "InvalidFunctionId": "معرّف الوظيفة غير صالح",
+        "FunctionNotFound": "الوظيفة غير موجودة",
+        "CannotDeleteFunction": "لا يمكن حذف الوظيفة، لديها سجلات مرتبطة في جداول أخرى",
+    
+        "FailedCreateProductionType": "فشل في إنشاء نوع الإنتاج",
+        "ProductionTypeExists": "اسم نوع الإنتاج موجود بالفعل",
+        "InvalidProductionTypeId": "معرّف نوع الإنتاج غير صالح",
+        "ProductionTypeNotFound": "نوع الإنتاج غير موجود",
+        "CannotDeleteProductionType": "لا يمكن حذف نوع الإنتاج، لديه سجلات مرتبطة في جداول أخرى",
+    
+        "FailedCreatePublisher": "فشل في إنشاء الناشر",
+        "PublisherExists": "اسم الناشر موجود بالفعل",
+        "InvalidPublisherId": "معرّف الناشر غير صالح",
+        "PublisherNotFound": "الناشر غير موجود",
+        "CannotDeletePublisher": "لا يمكن حذف الناشر، لديه سجلات مرتبطة في جداول أخرى",
+    
+        "FailedCreateSpeciality": "فشل في إنشاء التخصص",
+        "SpecialityExists": "اسم التخصص موجود بالفعل",
+        "InvalidSpecialityId": "معرّف التخصص غير صالح",
+        "SpecialityNotFound": "التخصص غير موجود",
+        "CannotDeleteSpeciality": "لا يمكن حذف التخصص، لديه سجلات مرتبطة في جداول أخرى",
+    
+        "FailedCreateReviewSpeciality": "فشل في إنشاء تخصص المجلة",
+        "ReviewSpecialityExists": "اسم تخصص المجلة موجود بالفعل",
+        "InvalidReviewSpecialityId": "معرّف تخصص المجلة غير صالح",
+        "ReviewSpecialityNotFound": "تخصص المجلة غير موجود",
+        "CannotDeleteReviewSpeciality": "لا يمكن حذف تخصص المجلة، لديه سجلات مرتبطة في جداول أخرى",
+    
+        "FailedCreateTeam": "فشل في إنشاء الفريق",
+        "TeamExists": "اسم الفريق موجود بالفعل",
+        "InvalidTeamId": "معرّف الفريق غير صالح",
+        "TeamNotFound": "الفريق غير موجود",
+        "CannotDeleteTeam": "لا يمكن حذف الفريق، لديه سجلات مرتبطة في جداول أخرى",
+
+        "FailedCreateLaboratory": "فشل في إنشاء المختبر",
+        "LaboratoryExists": "اسم المختبر موجود بالفعل",
+        "InvalidLaboratoryId": "معرف المختبر غير صالح",
+        "LaboratoryNotFound": "المختبر غير موجود",
+        "CannotDeleteLaboratory": "لا يمكن حذف المختبر، لديه سجلات مرتبطة في جداول أخرى",
+
+        "FailedCreateEquipment": "فشل في إنشاء المعدات",
+        "EquipmentExists": "اسم المعدات موجود بالفعل",
+        "InvalidEquipmentId": "معرف المعدات غير صالح",
+        "EquipmentNotFound": "المعدات غير موجودة",
+        "CannotDeleteEquipment": "لا يمكن حذف المعدات، لديها سجلات مرتبطة في جداول أخرى",
+
+        "FailedCreateDoctoralStudent": "فشل في إنشاء طالب الدكتوراه",
+        "DoctoralStudentExists": "اسم طالب الدكتوراه موجود بالفعل",
+        "InvalidDoctoralStudentId": "معرف طالب الدكتوراه غير صالح",
+        "DoctoralStudentNotFound": "طالب الدكتوراه غير موجود",
+        "CannotDeleteDoctoralStudent": "لا يمكن حذف طالب الدكتوراه، لديه سجلات مرتبطة في جداول أخرى",        
+
+        "FailedCreateResearcher": "فشل في إنشاء الباحث",
+        "ResearcherExists": "اسم الباحث موجود بالفعل",
+        "InvalidResearcherId": "معرف الباحث غير صالح",
+        "ResearcherNotFound": "الباحث غير موجود",
+        "CannotDeleteResearcher": "لا يمكن حذف الباحث، لديه سجلات مرتبطة في جداول أخرى",
+        "DirectorExists": "يوجد مدير بالفعل في هذا المختبر",
+        "DirectorLabChangeNotAllowed": "لا يمكن للمدير تغيير مختبره",
+
+        "FailedCreatePublication": "فشل في إنشاء النشر العلمي",
+        "PublicationExists": "اسم النشر العلمي موجود بالفعل",
+        "InvalidPublicationId": "معرف النشر العلمي غير صالح",
+        "PublicationNotFound": "النشر العلمي غير موجود",
+        "CannotDeletePublication": "لا يمكن حذف النشر العلمي، لديه سجلات مرتبطة في جداول أخرى",
+
+        "FailedCreateCommunication": "فشل في إنشاء التواصل العلمي",
+        "CommunicationExists": "اسم التواصل العلمي موجود بالفعل",
+        "InvalidCommunicationId": "معرف التواصل العلمي غير صالح",
+        "CommunicationNotFound": "التواصل العلمي غير موجود",
+        "CannotDeleteCommunication": "لا يمكن حذف التواصل العلمي، لديه سجلات مرتبطة في جداول أخرى",
+
+        "FailedCreateReview": "فشل في إنشاء المجلة",
+        "ReviewExists": "اسم المجلة موجود بالفعل",
+        "InvalidReviewId": "معرف المجلة غير صالح",
+        "ReviewNotFound": "المجلة غير موجودة",
+        "CannotDeleteReview": "لا يمكن حذف المجلة، لديها سجلات مرتبطة في جداول أخرى",
+
+        "InvalidSuperviseId": "معرف الإشراف غير صالح",
+        "ResearcherAlreadySupervising": "الباحث يشرف بالفعل على طالب آخر.",
+        "StudentAlreadySupervised": "الطالب يشرف عليه بالفعل باحث آخر.",
+        "InvalidEndDate": "لا يمكن أن تكون تاريخ النهاية قبل تاريخ البداية.",
+        "SuperviseExists": "الإشراف موجود بالفعل مع نفس الباحث والطالب",
+        "SuperviseNotFound": "لم يتم العثور على الإشراف.",
+        "CannotDeleteSupervise": "لا يمكن حذف الإشراف بسبب وجود اعتمادات موجودة.",
+        "SupervisionSetPast": "الإشراف موجود بالفعل",
+
+        "EquipmentAlreadyAssignedResearcher": "تم تعيين المعدات بالفعل من قبل باحث آخر ولم يتم إرجاعها بعد.",
+        "InvalidReturnDate": "لا يمكن أن يكون تاريخ الإرجاع أقدم من تاريخ التعيين.",
+        "InvalidAssignmentId": "معرّف التعيين المُقدَّم غير صالح.",
+        "AssignmentResearcherNotFound": "لم يتم العثور على تعيين الباحث.",
+        "ResearcherAlreadyAssignedPast": "تم تعيين هذا الجهاز للباحث بالفعل في الماضي",
+
+        "PublicationResearcherAlreadyAssigned": "تم تعيين هذا المنشور بالفعل للباحث.",
+        "InvalidPublishResearcherPubId": "معرّف تعيين منشور الباحث المُقدَّم غير صالح.",
+        "PublishResearcherPubNotFound": "لم يتم العثور على تعيين منشور الباحث.",
+
+        "CommunicationResearcherAlreadyAssigned": "تم تعيين هذه المداخلة بالفعل للباحث.",
+        "InvalidPublishResearcherCommId": "معرّف تعيين مداخلة الباحث المُقدَّم غير صالح.",
+        "PublishResearcherCommNotFound": "لم يتم العثور على تعيين مداخلة الباحث.",
+
+        "PublicationDoctoralStudentAlreadyAssigned": "تم تعيين هذا المنشور بالفعل لطالب الدكتوراه.",
+        "InvalidPublishDoctoralStudentPubId": "معرّف تعيين منشور طالب الدكتوراه المُقدَّم غير صالح.",
+        "PublishDoctoralStudentPubNotFound": "لم يتم العثور على تعيين منشور طالب الدكتوراه.",
+
+        "CommunicationDoctoralStudentAlreadyAssigned": "تم تعيين هذه المداخلة بالفعل لطالب الدكتوراه.",
+        "InvalidPublishDoctoralStudentCommId": "معرّف تعيين مداخلة طالب الدكتوراه المُقدَّم غير صالح.",
+        "PublishDoctoralStudentCommNotFound": "لم يتم العثور على تعيين مداخلة طالب الدكتوراه.",
+
+        "SpecialityAlreadyAssigned": "تم تعيين هذا التخصص بالفعل للمراجعة.",
+        "InvalidHasSpecialityId": "معرّف تعيين التخصص المُقدَّم غير صالح.",
+        "HasSpecialityNotFound": "لم يتم العثور على تعيين التخصص.",
+
+        "CategoryAlreadyAssigned": "تم تعيين هذه الفئة بالفعل للمراجعة.",
+        "InvalidHasCategoryId": "معرّف تعيين الفئة المُقدَّم غير صالح.",
+        "HasCategoryNotFound": "لم يتم العثور على تعيين الفئة.",
+
+        "EquipmentAlreadyAssignedDoctoralStudent": "تم تعيين هذه المعدات بالفعل من قبل طالب دكتوراه آخر ولم يتم إرجاعها بعد.",
+        "AssignmentDoctoralStudentNotFound": "لم يتم العثور على تعيين طالب الدكتوراه.",
+        "DoctoralStudentAlreadyAssignedPast": "تم تعيين هذا الجهاز لطالب الدكتوراه بالفعل في الماضي",
+
+        "FailedCreateRole": "فشل في إنشاء الدور",
+        "RoleExists": "اسم الدور موجود بالفعل",
+        "InvalidRoleId": "معرّف الدور غير صالح",
+        "RoleNotFound": "الدور غير موجود",
+        "CannotDeleteRole": "لا يمكن حذف الدور، لديه سجلات مرتبطة في جداول أخرى",
+
+        "FailedCreateUser": "فشل في إنشاء المستخدم",
+        "UserExists": "اسم المستخدم موجود بالفعل",
+        "InvalidUserId": "معرّف المستخدم غير صالح",
+        "UserNotFound": "المستخدم غير موجود",
+        "CannotDeleteUser": "لا يمكن حذف المستخدم، لديه سجلات مرتبطة في جداول أخرى",
+
+        "LogoutFailed": "فشل في تسجيل الخروج",
+        "Unauthorized": "غير مصرح",
+        "ForbiddenAccessDenied": "ممنوع - الوصول مرفوض",
+
+        "AttributeNotAllowed": "لديك مدخل غير مسموح به",
+        "InternalServerError": "حدث خطأ داخلي في الخادم. يرجى المحاولة لاحقًا",
+        "RouteNotFound": "المسار غير موجود"
+    },
+    "success": {
+        "CategoryEmptyTable": "لم يتم العثور على أي فئات",
+        "CategoryCreated": "تم إنشاء الفئة بنجاح",
+        "CategoryUpdated": "تم تحديث الفئة بنجاح",
+        "CategoryDeleted": "تم حذف الفئة بنجاح",
+
+        "DepartmentEmptyTable": "لم يتم العثور على أي أقسام",
+        "DepartmentCreated": "تم إنشاء القسم بنجاح",
+        "DepartmentUpdated": "تم تحديث القسم بنجاح",
+        "DepartmentDeleted": "تم حذف القسم بنجاح",
+
+        "DomainEmptyTable": "لم يتم العثور على مجالات",
+        "DomainCreated": "تم إنشاء المجال بنجاح",
+        "DomainUpdated": "تم تحديث المجال بنجاح",
+        "DomainDeleted": "تم حذف المجال بنجاح",
+
+        "FacultyEmptyTable": "لم يتم العثور على أي كلية",
+        "FacultyCreated": "تم إنشاء الكلية بنجاح",
+        "FacultyUpdated": "تم تحديث الكلية بنجاح",
+        "FacultyDeleted": "تم حذف الكلية بنجاح",
+
+        "FunctionEmptyTable": "لم يتم العثور على أي وظيفة",
+        "FunctionCreated": "تم إنشاء الوظيفة بنجاح",
+        "FunctionUpdated": "تم تحديث الوظيفة بنجاح",
+        "FunctionDeleted": "تم حذف الوظيفة بنجاح",
+
+        "ProductionTypeEmptyTable": "لم يتم العثور على أي نوع إنتاج",
+        "ProductionTypeCreated": "تم إنشاء نوع الإنتاج بنجاح",
+        "ProductionTypeUpdated": "تم تحديث نوع الإنتاج بنجاح",
+        "ProductionTypeDeleted": "تم حذف نوع الإنتاج بنجاح",
+
+        "PublisherEmptyTable": "لم يتم العثور على أي ناشر",
+        "PublisherCreated": "تم إنشاء الناشر بنجاح",
+        "PublisherUpdated": "تم تحديث الناشر بنجاح",
+        "PublisherDeleted": "تم حذف الناشر بنجاح",
+
+        "SpecialityEmptyTable": "لم يتم العثور على أي تخصص",
+        "SpecialityCreated": "تم إنشاء التخصص بنجاح",
+        "SpecialityUpdated": "تم تحديث التخصص بنجاح",
+        "SpecialityDeleted": "تم حذف التخصص بنجاح",
+
+        "ReviewSpecialityEmptyTable": "لم يتم العثور على أي تخصص مجلة ",
+        "ReviewSpecialityCreated": "تم إنشاء تخصص المجلة بنجاح",
+        "ReviewSpecialityUpdated": "تم تحديث تخصص المجلة بنجاح",
+        "ReviewSpecialityDeleted": "تم حذف تخصص المجلة بنجاح",
+
+        "TeamEmptyTable": "لم يتم العثور على أي فريق",
+        "TeamCreated": "تم إنشاء الفريق بنجاح",
+        "TeamUpdated": "تم تحديث الفريق بنجاح",
+        "TeamDeleted": "تم حذف الفريق بنجاح",
+
+        "LaboratoryEmptyTable": "لم يتم العثور على أي مختبرات",
+        "LaboratoryCreated": "تم إنشاء المختبر بنجاح",
+        "LaboratoryUpdated": "تم تحديث المختبر بنجاح",
+        "LaboratoryDeleted": "تم حذف المختبر بنجاح",
+
+        "EquipmentEmptyTable": "لم يتم العثور على أي معدات",
+        "EquipmentCreated": "تم إنشاء المعدات بنجاح",
+        "EquipmentUpdated": "تم تحديث المعدات بنجاح",
+        "EquipmentDeleted": "تم حذف المعدات بنجاح",
+
+        "DoctoralStudentEmptyTable": "لم يتم العثور على أي طلاب دكتوراه",
+        "DoctoralStudentCreated": "تم إنشاء طالب الدكتوراه بنجاح",
+        "DoctoralStudentUpdated": "تم تحديث طالب الدكتوراه بنجاح",
+        "DoctoralStudentDeleted": "تم حذف طالب الدكتوراه بنجاح",
+
+        "ResearcherEmptyTable": "لم يتم العثور على أي باحثين",
+        "ResearcherCreated": "تم إنشاء الباحث بنجاح",
+        "ResearcherUpdated": "تم تحديث الباحث بنجاح",
+        "ResearcherDeleted": "تم حذف الباحث بنجاح",
+
+        "PublicationEmptyTable": "لم يتم العثور على أي منشورات علمية",
+        "PublicationCreated": "تم إنشاء المنشور العلمي بنجاح",
+        "PublicationUpdated": "تم تحديث المنشور العلمي بنجاح",
+        "PublicationDeleted": "تم حذف المنشور العلمي بنجاح",
+
+        "CommunicationEmptyTable": "لم يتم العثور على أي تواصلات علمية",
+        "CommunicationCreated": "تم إنشاء التواصل العلمي بنجاح",
+        "CommunicationUpdated": "تم تحديث التواصل العلمي بنجاح",
+        "CommunicationDeleted": "تم حذف التواصل العلمي بنجاح",
+
+        "ReviewEmptyTable": "لم يتم العثور على أي مجلات",
+        "ReviewCreated": "تم إنشاء المجلة بنجاح",
+        "ReviewUpdated": "تم تحديث المجلة بنجاح",
+        "ReviewDeleted": "تم حذف المجلة بنجاح",
+
+        "SuperviseEmptyTable": "لم يتم العثور على أي سجلات إشراف",
+        "SuperviseCreated": "تم إنشاء الإشراف بنجاح",
+        "SuperviseUpdated": "تم تحديث الإشراف بنجاح",
+        "SuperviseDeleted": "تم حذف الإشراف بنجاح",
+
+        "AssignmentResearcherEmptyTable": "لم يتم العثور على أي تعيين للمعدات.",
+        "AssignmentResearcherCreated": "تم تعيين المعدات بنجاح للباحث.",
+        "AssignmentResearcherUpdated": "تم تحديث التعيين بنجاح.",
+        "AssignmentResearcherDeleted": "تم حذف التعيين بنجاح.",
+
+        "PublishResearcherPubCreated": "تم تعيين المنشور بنجاح للباحث.",
+        "PublishResearcherPubEmptyTable": "لم يتم العثور على أي تعيين لمنشور الباحث.",
+        "PublishResearcherPubDeleted": "تم حذف تعيين منشور الباحث بنجاح.",
+
+        "PublishResearcherCommCreated": "تم تعيين المداخلة بنجاح للباحث.",
+        "PublishResearcherCommEmptyTable": "لم يتم العثور على أي تعيين لمداخلة الباحث.",
+        "PublishResearcherCommDeleted": "تم حذف تعيين مداخلة الباحث بنجاح.",
+
+        "PublishDoctoralStudentPubCreated": "تم تعيين المنشور بنجاح لطالب الدكتوراه.",
+        "PublishDoctoralStudentPubEmptyTable": "لم يتم العثور على أي تعيين لمنشور طالب الدكتوراه.",
+        "PublishDoctoralStudentPubDeleted": "تم حذف تعيين منشور طالب الدكتوراه بنجاح.",
+
+        "PublishDoctoralStudentCommCreated": "تم تعيين المداخلة بنجاح لطالب الدكتوراه.",
+        "PublishDoctoralStudentCommEmptyTable": "لم يتم العثور على أي تعيين لمداخلة طالب الدكتوراه.",
+        "PublishDoctoralStudentCommDeleted": "تم حذف تعيين مداخلة طالب الدكتوراه بنجاح.",
+
+        "HasSpecialityCreated": "تم تعيين التخصص بنجاح للمراجعة.",
+        "HasSpecialityEmptyTable": "لم يتم العثور على أي تعيين للتخصص.",
+        "HasSpecialityDeleted": "تم حذف تعيين التخصص بنجاح.",
+
+        "HasCategoryCreated": "تم تعيين الفئة بنجاح للمراجعة.",
+        "HasCategoryEmptyTable": "لم يتم العثور على أي تعيين للفئة.",
+        "HasCategoryDeleted": "تم حذف تعيين الفئة بنجاح.",
+
+        "AssignmentDoctoralStudentCreated": "تم تعيين المعدات بنجاح لطالب الدكتوراه.",
+        "AssignmentDoctoralStudentUpdated": "تم تحديث التعيين بنجاح.",
+        "AssignmentDoctoralStudentDeleted": "تم حذف التعيين بنجاح.",
+        "AssignmentDoctoralStudentEmptyTable": "لم يتم العثور على أي تعيين للمعدات.",
+
+        "RoleEmptyTable": "لم يتم العثور على أدوار",
+        "RoleCreated": "تم إنشاء الدور بنجاح",
+        "RoleUpdated": "تم تحديث الدور بنجاح",
+        "RoleDeleted": "تم حذف الدور بنجاح",
+
+        "UserEmptyTable": "لم يتم العثور على مستخدمين",
+        "UserCreated": "تم إنشاء المستخدم بنجاح",
+        "UserUpdated": "تم تحديث المستخدم بنجاح",
+        "UserDeleted": "تم حذف المستخدم بنجاح",
+
+        "LoginSuccess": "تم تسجيل الدخول بنجاح",
+        "LogoutSuccess": "تم تسجيل الخروج بنجاح"
+    },
+    "excel": {
+        "FailedDoctoralStudentsAssignments": "فشل في تصدير تعيينات طلبة الدكتوراه",
+        "FailedDoctoralStudentsAssignmentsByLab": "فشل في تصدير تعيينات طلبة الدكتوراه حسب المخبر",
+        "FailedResearchersAssignments": "فشل في تصدير تعيينات الباحثين",
+        "FailedResearchersAssignmentsByLab": "فشل في تصدير تعيينات الباحثين حسب المخبر",
+        "FailedCommunication": "فشل في تصدير الاتصالات",
+        "FailedCommunicationByLab": "فشل في تصدير الاتصالات حسب المخبر",
+        "FailedDoctoralStudents": "فشل في تصدير طلبة الدكتوراه",
+        "FailedDoctoralStudentsByLab": "فشل في تصدير طلبة الدكتوراه حسب المخبر",
+        "FailedResearchers": "فشل في تصدير الباحثين",
+        "FailedResearchersByLab": "فشل في تصدير الباحثين حسب المخبر",
+        "FailedEquipments": "فشل في تصدير التجهيزات",
+        "FailedEquipmentsByLab": "فشل في تصدير التجهيزات حسب المخبر",
+        "FailedLaboratories": "فشل في تصدير المخابر",
+        "FailedLaboratoriesByFac": "فشل في تصدير المخابر حسب الكلية",
+        "FailedPublications": "فشل في تصدير المنشورات",
+        "FailedPublicationsByLab": "فشل في تصدير المنشورات حسب المخبر",
+        "FailedSupervisions": "فشل في تصدير الإشرافات",
+        "FailedSupervisionsByLab": "فشل في تصدير الإشرافات حسب المخبر",
+        "FailedTeams": "فشل في تصدير الفرق"
+    }
+}

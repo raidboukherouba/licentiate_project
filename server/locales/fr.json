@@ -1,0 +1,328 @@
+{
+    "error": {
+        "FailedCreateCategory": "Échec de la création de la catégorie",
+        "CategoryExists": "Le nom de la catégorie existe déjà",
+        "CategoryNotFound": "Catégorie non trouvée",
+        "CannotDeleteCategory": "Impossible de supprimer la catégorie, elle est associée à d'autres enregistrements",
+
+        "FailedCreateDepartment": "Échec de la création du département",
+        "DepartmentExists": "Le nom du département existe déjà",
+        "InvalidDepartmentId": "ID de département invalide",
+        "DepartmentNotFound": "Département non trouvé",
+        "CannotDeleteDepartment": "Impossible de supprimer le département, il est associé à d'autres enregistrements.",
+        
+        "FailedCreateDomain": "Échec de la création du domaine",
+        "DomainExists": "Le nom du domaine existe déjà",
+        "InvalidDomainId": "ID de domaine invalide",
+        "DomainNotFound": "Domaine non trouvé",
+        "CannotDeleteDomain": "Impossible de supprimer le domaine, il a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateFaculty": "Échec de la création de la faculté",
+        "FacultyExists": "Le nom de la faculté existe déjà",
+        "InvalidFacultyId": "ID de faculté invalide",
+        "FacultyNotFound": "Faculté non trouvée",
+        "CannotDeleteFaculty": "Impossible de supprimer la faculté, elle a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateFunction": "Échec de la création de la fonction",
+        "FunctionExists": "Le nom de la fonction existe déjà",
+        "InvalidFunctionId": "ID de fonction invalide",
+        "FunctionNotFound": "Fonction non trouvée",
+        "CannotDeleteFunction": "Impossible de supprimer la fonction, elle a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateProductionType": "Échec de la création du type de production",
+        "ProductionTypeExists": "Le nom du type de production existe déjà",
+        "InvalidProductionTypeId": "ID de type de production invalide",
+        "ProductionTypeNotFound": "Type de production non trouvé",
+        "CannotDeleteProductionType": "Impossible de supprimer le type de production, il a des enregistrements associés dans d'autres tables",
+        
+        "FailedCreatePublisher": "Échec de la création de l'éditeur",
+        "PublisherExists": "Le nom de l'éditeur existe déjà",
+        "InvalidPublisherId": "ID d'éditeur invalide",
+        "PublisherNotFound": "Éditeur non trouvé",
+        "CannotDeletePublisher": "Impossible de supprimer l'éditeur, il a des enregistrements associés dans d'autres tables",
+        
+        "FailedCreateSpeciality": "Échec de la création de la spécialité",
+        "SpecialityExists": "Le nom de la spécialité existe déjà",
+        "InvalidSpecialityId": "ID de spécialité invalide",
+        "SpecialityNotFound": "Spécialité non trouvée",
+        "CannotDeleteSpeciality": "Impossible de supprimer la spécialité, elle a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateReviewSpeciality": "Échec de la création de la spécialité de revue",
+        "ReviewSpecialityExists": "Le nom de la spécialité de revue existe déjà",
+        "InvalidReviewSpecialityId": "ID de spécialité de revue invalide",
+        "ReviewSpecialityNotFound": "Spécialité de revue non trouvée",
+        "CannotDeleteReviewSpeciality": "Impossible de supprimer la spécialité de revue, elle a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateTeam": "Échec de la création de l'équipe",
+        "TeamExists": "Le nom de l'équipe existe déjà",
+        "InvalidTeamId": "ID d'équipe invalide",
+        "TeamNotFound": "Équipe non trouvée",
+        "CannotDeleteTeam": "Impossible de supprimer l'équipe, elle a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateLaboratory": "Échec de la création du laboratoire",
+        "LaboratoryExists": "Le nom du laboratoire existe déjà",
+        "InvalidLaboratoryId": "ID de laboratoire invalide",
+        "LaboratoryNotFound": "Laboratoire non trouvé",
+        "CannotDeleteLaboratory": "Impossible de supprimer le laboratoire, il a des enregistrements associés dans d'autres tables",
+        
+        "FailedCreateEquipment": "Échec de la création de l'équipement",
+        "EquipmentExists": "Le nom de l'équipement existe déjà",
+        "InvalidEquipmentId": "ID d'équipement invalide",
+        "EquipmentNotFound": "Équipement non trouvé",
+        "CannotDeleteEquipment": "Impossible de supprimer l'équipement, il a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateDoctoralStudent": "Échec de la création de doctorant",
+        "DoctoralStudentExists": "Le nom de doctorant existe déjà",
+        "InvalidDoctoralStudentId": "ID de doctorant invalide",
+        "DoctoralStudentNotFound": "Doctorant non trouvé",
+        "CannotDeleteDoctoralStudent": "Impossible de supprimer le doctorant, il a des enregistrements associés dans d'autres tables",
+        
+        "FailedCreateResearcher": "Échec de la création du chercheur",
+        "ResearcherExists": "Le nom du chercheur existe déjà",
+        "InvalidResearcherId": "ID du chercheur invalide",
+        "ResearcherNotFound": "Chercheur non trouvé",
+        "CannotDeleteResearcher": "Impossible de supprimer le chercheur, il a des enregistrements associés dans d'autres tables",
+        "DirectorExists": "Un directeur existe déjà dans ce laboratoire",
+        "DirectorLabChangeNotAllowed": "Un directeur ne peut pas changer de laboratoire",
+        
+        "FailedCreatePublication": "Échec de la création de la publication",
+        "PublicationExists": "Le nom de la publication existe déjà",
+        "InvalidPublicationId": "ID de publication invalide",
+        "PublicationNotFound": "Publication non trouvée",
+        "CannotDeletePublication": "Impossible de supprimer la publication, elle a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateCommunication": "Échec de la création de la communication",
+        "CommunicationExists": "Le nom de la communication existe déjà",
+        "InvalidCommunicationId": "ID de communication invalide",
+        "CommunicationNotFound": "Communication non trouvée",
+        "CannotDeleteCommunication": "Impossible de supprimer la communication, elle a des enregistrements associés dans d'autres tables",
+
+        "FailedCreateReview": "Échec de la création de revue",
+        "ReviewExists": "Le nom de revue existe déjà",
+        "InvalidReviewId": "ID de revue invalide",
+        "ReviewNotFound": "Revue non trouvé",
+        "CannotDeleteReview": "Impossible de supprimer la revue, il a des enregistrements associés dans d'autres tables",
+        
+        "InvalidSuperviseId": "ID de supervision invalide",
+        "ResearcherAlreadySupervising": "Le chercheur supervise déjà un autre étudiant.",
+        "StudentAlreadySupervised": "L'étudiant est déjà supervisé par un autre chercheur.",
+        "InvalidEndDate": "La date de fin ne peut pas être antérieure à la date de début.",
+        "SuperviseExists": "Une supervision existe déjà avec le même chercheur et étudiant.",
+        "SuperviseNotFound": "Supervision non trouvé.",
+        "CannotDeleteSupervise": "Cette supervision ne peut pas être supprimé en raison de dépendances existantes.",
+        "SupervisionSetPast": "La supervision existe déjà",
+
+        "EquipmentAlreadyAssignedResearcher": "L'équipement est déjà attribué par un autre chercheur et n'a pas encore été retourné.",
+        "InvalidReturnDate": "La date de retour ne peut pas être antérieure à la date d'affectation.",
+        "InvalidAssignmentId": "L'ID d'affectation fourni est invalide.",
+        "AssignmentResearcherNotFound": "Affectation du chercheur non trouvée.",
+        "ResearcherAlreadyAssignedPast": "Cet équipement a déjà été attribué au chercheur dans le passé",
+
+        "PublicationResearcherAlreadyAssigned": "Cette publication est déjà attribuée au chercheur.",
+        "InvalidPublishResearcherPubId": "L'ID d'affectation de publication du chercheur fourni est invalide.",
+        "PublishResearcherPubNotFound": "Affectation de publication du chercheur non trouvée.",
+
+        "CommunicationResearcherAlreadyAssigned": "Cette communication est déjà attribuée au chercheur.",
+        "InvalidPublishResearcherCommId": "L'ID d'affectation de communication du chercheur fourni est invalide.",
+        "PublishResearcherCommNotFound": "Affectation de communication du chercheur non trouvée.",
+
+        "PublicationDoctoralStudentAlreadyAssigned": "Cette publication est déjà attribuée au doctorant.",
+        "InvalidPublishDoctoralStudentPubId": "L'ID d'affectation de publication du doctorant fourni est invalide.",
+        "PublishDoctoralStudentPubNotFound": "Affectation de publication du doctorant non trouvée.",
+
+        "CommunicationDoctoralStudentAlreadyAssigned": "Cette communication est déjà attribuée au doctorant.",
+        "InvalidPublishDoctoralStudentCommId": "L'ID d'affectation de communication du doctorant fourni est invalide.",
+        "PublishDoctoralStudentCommNotFound": "Affectation de communication du doctorant non trouvée.",
+
+        "SpecialityAlreadyAssigned": "Cette spécialité est déjà attribuée à la revue.",
+        "InvalidHasSpecialityId": "L'ID d'affectation de spécialité fourni est invalide.",
+        "HasSpecialityNotFound": "Affectation de spécialité non trouvée.",
+
+        "CategoryAlreadyAssigned": "Cette catégorie est déjà attribuée à la revue.",
+        "InvalidHasCategoryId": "L'ID d'affectation de catégorie fourni est invalide.",
+        "HasCategoryNotFound": "Affectation de catégorie non trouvée.",
+
+        "EquipmentAlreadyAssignedDoctoralStudent": "Cet équipement est déjà attribué par un autre doctorant et n'a pas encore été retourné.",
+        "AssignmentDoctoralStudentNotFound": "Affectation du doctorant non trouvée.",
+        "DoctoralStudentAlreadyAssignedPast": "Cet équipement a déjà été attribué à l’étudiant en doctorat dans le passé",
+        
+        "FailedCreateRole": "Échec de la création du rôle",
+        "RoleExists": "Le nom du rôle existe déjà",
+        "InvalidRoleId": "ID de rôle invalide",
+        "RoleNotFound": "Rôle non trouvé",
+        "CannotDeleteRole": "Impossible de supprimer le rôle, il a des enregistrements associés dans d'autres tables",
+        
+        "FailedCreateUser": "Échec de la création de l'utilisateur",
+        "UserExists": "Le nom d'utilisateur existe déjà",
+        "InvalidUserId": "ID d'utilisateur invalide",
+        "UserNotFound": "Utilisateur non trouvé",
+        "CannotDeleteUser": "Impossible de supprimer l'utilisateur, il a des enregistrements associés dans d'autres tables",
+
+        "LogoutFailed": "Échec de la déconnexion",
+        "Unauthorized": "Non autorisé",
+        "ForbiddenAccessDenied": "Interdit - Accès refusé",
+
+        "AttributeNotAllowed": "Vous avez un attribut non autorisé",
+        "InternalServerError": "Une erreur interne est survenue. Veuillez réessayer plus tard.",
+        "RouteNotFound": "Route non trouvée" 
+    },
+    "success": {
+        "CategoryEmptyTable": "Aucune catégorie trouvée",
+        "CategoryCreated": "Catégorie créée avec succès",
+        "CategoryUpdated": "Catégorie mise à jour avec succès",
+        "CategoryDeleted": "Catégorie supprimée avec succès",
+
+        "DepartmentEmptyTable": "Aucun département trouvé",
+        "DepartmentCreated": "Département créé avec succès",
+        "DepartmentUpdated": "Département mis à jour avec succès",
+        "DepartmentDeleted": "Département supprimé avec succès",
+
+        "DomainEmptyTable": "Aucun domaine trouvé",
+        "DomainCreated": "Domaine créé avec succès",
+        "DomainUpdated": "Domaine mis à jour avec succès",
+        "DomainDeleted": "Domaine supprimé avec succès",
+
+        "FacultyEmptyTable": "Aucune faculté trouvée",
+        "FacultyCreated": "Faculté créée avec succès",
+        "FacultyUpdated": "Faculté mise à jour avec succès",
+        "FacultyDeleted": "Faculté supprimée avec succès",
+
+        "FunctionEmptyTable": "Aucune fonction trouvée",
+        "FunctionCreated": "Fonction créée avec succès",
+        "FunctionUpdated": "Fonction mise à jour avec succès",
+        "FunctionDeleted": "Fonction supprimée avec succès",
+
+        "ProductionTypeEmptyTable": "Aucun type de production trouvé",
+        "ProductionTypeCreated": "Type de production créé avec succès",
+        "ProductionTypeUpdated": "Type de production mis à jour avec succès",
+        "ProductionTypeDeleted": "Type de production supprimé avec succès",
+
+        "PublisherEmptyTable": "Aucun éditeur trouvé",
+        "PublisherCreated": "Éditeur créé avec succès",
+        "PublisherUpdated": "Éditeur mis à jour avec succès",
+        "PublisherDeleted": "Éditeur supprimé avec succès",
+
+        "SpecialityEmptyTable": "Aucune spécialité trouvée",
+        "SpecialityCreated": "Spécialité créée avec succès",
+        "SpecialityUpdated": "Spécialité mise à jour avec succès",
+        "SpecialityDeleted": "Spécialité supprimée avec succès",
+
+        "ReviewSpecialityEmptyTable": "Aucune spécialité de revue trouvée",
+        "ReviewSpecialityCreated": "Spécialité de revue créée avec succès",
+        "ReviewSpecialityUpdated": "Spécialité de revue mise à jour avec succès",
+        "ReviewSpecialityDeleted": "Spécialité de revue supprimée avec succès",
+
+        "TeamEmptyTable": "Aucune équipe trouvée",
+        "TeamCreated": "Équipe créée avec succès",
+        "TeamUpdated": "Équipe mise à jour avec succès",
+        "TeamDeleted": "Équipe supprimée avec succès",
+
+        "LaboratoryEmptyTable": "Aucun laboratoire trouvé",
+        "LaboratoryCreated": "Laboratoire créé avec succès",
+        "LaboratoryUpdated": "Laboratoire mis à jour avec succès",
+        "LaboratoryDeleted": "Laboratoire supprimé avec succès",
+
+        "EquipmentEmptyTable": "Aucun équipement trouvé",
+        "EquipmentCreated": "Équipement créé avec succès",
+        "EquipmentUpdated": "Équipement mis à jour avec succès",
+        "EquipmentDeleted": "Équipement supprimé avec succès",
+
+        "DoctoralStudentEmptyTable": "Aucun doctorant trouvé",
+        "DoctoralStudentCreated": "Doctorant créé avec succès",
+        "DoctoralStudentUpdated": "Doctorant mis à jour avec succès",
+        "DoctoralStudentDeleted": "Doctorant supprimé avec succès",
+
+        "ResearcherEmptyTable": "Aucun chercheur trouvé",
+        "ResearcherCreated": "Chercheur créé avec succès",
+        "ResearcherUpdated": "Chercheur mis à jour avec succès",
+        "ResearcherDeleted": "Chercheur supprimé avec succès",
+
+        "PublicationEmptyTable": "Aucune publication trouvée",
+        "PublicationCreated": "Publication créée avec succès",
+        "PublicationUpdated": "Publication mise à jour avec succès",
+        "PublicationDeleted": "Publication supprimée avec succès",
+
+        "CommunicationEmptyTable": "Aucune communication trouvée",
+        "CommunicationCreated": "Communication créée avec succès",
+        "CommunicationUpdated": "Communication mise à jour avec succès",
+        "CommunicationDeleted": "Communication supprimée avec succès",
+
+        "ReviewEmptyTable": "Aucune revue trouvée",
+        "ReviewCreated": "Revue créée avec succès",
+        "ReviewUpdated": "Revue mise à jour avec succès",
+        "ReviewDeleted": "Revue supprimée avec succès",
+
+        "SuperviseEmptyTable": "Aucune supervision trouvé",
+        "SuperviseCreated": "Supervision créée avec succès.",
+        "SuperviseUpdated": "Supervision mise à jour avec succès.",
+        "SuperviseDeleted": "Supervision supprimée avec succès.",
+
+        "AssignmentResearcherEmptyTable": "Aucune affectation d'équipement trouvée.",
+        "AssignmentResearcherCreated": "L'équipement a été attribué avec succès au chercheur.",
+        "AssignmentResearcherUpdated": "L'affectation a été mise à jour avec succès.",
+        "AssignmentResearcherDeleted": "L'affectation a été supprimée avec succès.",
+
+        "PublishResearcherPubCreated": "La publication a été attribuée avec succès au chercheur.",
+        "PublishResearcherPubEmptyTable": "Aucune affectation de publication de chercheur trouvée.",
+        "PublishResearcherPubDeleted": "L'affectation de publication du chercheur a été supprimée avec succès.",
+
+        "PublishResearcherCommCreated": "La communication a été attribuée avec succès au chercheur.",
+        "PublishResearcherCommEmptyTable": "Aucune affectation de communication de chercheur trouvée.",
+        "PublishResearcherCommDeleted": "L'affectation de communication du chercheur a été supprimée avec succès.",
+
+        "PublishDoctoralStudentPubCreated": "La publication a été attribuée avec succès au doctorant.",
+        "PublishDoctoralStudentPubEmptyTable": "Aucune affectation de publication de doctorant trouvée.",
+        "PublishDoctoralStudentPubDeleted": "L'affectation de publication du doctorant a été supprimée avec succès.",
+
+        "PublishDoctoralStudentCommCreated": "La communication a été attribuée avec succès au doctorant.",
+        "PublishDoctoralStudentCommEmptyTable": "Aucune affectation de communication de doctorant trouvée.",
+        "PublishDoctoralStudentCommDeleted": "L'affectation de communication du doctorant a été supprimée avec succès.",
+
+        "HasSpecialityCreated": "La spécialité a été attribuée avec succès à la revue.",
+        "HasSpecialityEmptyTable": "Aucune affectation de spécialité trouvée.",
+        "HasSpecialityDeleted": "L'affectation de spécialité a été supprimée avec succès.",
+
+        "HasCategoryCreated": "La catégorie a été attribuée avec succès à la revue.",
+        "HasCategoryEmptyTable": "Aucune affectation de catégorie trouvée.",
+        "HasCategoryDeleted": "L'affectation de catégorie a été supprimée avec succès.",
+
+        "AssignmentDoctoralStudentCreated": "L'équipement a été attribué avec succès au doctorant.",
+        "AssignmentDoctoralStudentUpdated": "L'affectation a été mise à jour avec succès.",
+        "AssignmentDoctoralStudentDeleted": "L'affectation a été supprimée avec succès.",
+        "AssignmentDoctoralStudentEmptyTable": "Aucune affectation d'équipement trouvée.",
+
+        "RoleEmptyTable": "Aucun rôle trouvé",
+        "RoleCreated": "Rôle créé avec succès",
+        "RoleUpdated": "Rôle mis à jour avec succès",
+        "RoleDeleted": "Rôle supprimé avec succès",
+
+        "UserEmptyTable": "Aucun utilisateur trouvé",
+        "UserCreated": "Utilisateur créé avec succès",
+        "UserUpdated": "Utilisateur mis à jour avec succès",
+        "UserDeleted": "Utilisateur supprimé avec succès",
+
+        "LoginSuccess": "Connexion réussie",
+        "LogoutSuccess": "Déconnexion réussie"
+    },
+    "excel": {
+        "FailedDoctoralStudentsAssignments": "Échec de l'exportation des affectations des doctorants",
+        "FailedDoctoralStudentsAssignmentsByLab": "Échec de l'exportation des affectations des doctorants par laboratoire",
+        "FailedResearchersAssignments": "Échec de l'exportation des affectations des chercheurs",
+        "FailedResearchersAssignmentsByLab": "Échec de l'exportation des affectations des chercheurs par laboratoire",
+        "FailedCommunication": "Échec de l'exportation des communications",
+        "FailedCommunicationByLab": "Échec de l'exportation des communications par laboratoire",
+        "FailedDoctoralStudents": "Échec de l'exportation des doctorants",
+        "FailedDoctoralStudentsByLab": "Échec de l'exportation des doctorants par laboratoire",
+        "FailedResearchers": "Échec de l'exportation des chercheurs",
+        "FailedResearchersByLab": "Échec de l'exportation des chercheurs par laboratoire",
+        "FailedEquipments": "Échec de l'exportation des équipements",
+        "FailedEquipmentsByLab": "Échec de l'exportation des équipements par laboratoire",
+        "FailedLaboratories": "Échec de l'exportation des laboratoires",
+        "FailedLaboratoriesByFac": "Échec de l'exportation des laboratoires par faculté",
+        "FailedPublications": "Échec de l'exportation des publications",
+        "FailedPublicationsByLab": "Échec de l'exportation des publications par laboratoire",
+        "FailedSupervisions": "Échec de l'exportation des encadrements",
+        "FailedSupervisionsByLab": "Échec de l'exportation des encadrements par laboratoire",
+        "FailedTeams": "Échec de l'exportation des équipes"
+    } 
+}

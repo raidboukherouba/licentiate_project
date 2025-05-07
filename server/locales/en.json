@@ -1,0 +1,328 @@
+{
+    "error": {
+        "FailedCreateCategory": "Failed to create category",
+        "CategoryExists": "Category name already exists",
+        "CategoryNotFound": "Category not found",
+        "CannotDeleteCategory": "Cannot delete category, it has associated records in other tables",
+        
+        "FailedCreateDepartment": "Failed to create department",
+        "DepartmentExists": "Department name already exists",
+        "InvalidDepartmentId": "Invalid department ID",
+        "DepartmentNotFound": "Department not found",
+        "CannotDeleteDepartment": "Cannot delete department, it has associated records in other tables",
+
+        "FailedCreateDomain": "Failed to create domain",
+        "DomainExists": "Domain name already exists",
+        "InvalidDomainId": "Invalid domain ID",
+        "DomainNotFound": "Domain not found",
+        "CannotDeleteDomain": "Cannot delete domain, it has associated records in other tables",
+
+        "FailedCreateFaculty": "Failed to create faculty",
+        "FacultyExists": "Faculty name already exists",
+        "InvalidFacultyId": "Invalid faculty ID",
+        "FacultyNotFound": "Faculty not found",
+        "CannotDeleteFaculty": "Cannot delete faculty, it has associated records in other tables",
+
+        "FailedCreateFunction": "Failed to create function",
+        "FunctionExists": "Function name already exists",
+        "InvalidFunctionId": "Invalid function ID",
+        "FunctionNotFound": "Function not found",
+        "CannotDeleteFunction": "Cannot delete function, it has associated records in other tables",
+
+        "FailedCreateProductionType": "Failed to create production type",
+        "ProductionTypeExists": "Production type name already exists",
+        "InvalidProductionTypeId": "Invalid production type ID",
+        "ProductionTypeNotFound": "Production type not found",
+        "CannotDeleteProductionType": "Cannot delete production type, it has associated records in other tables",
+
+        "FailedCreatePublisher": "Failed to create publisher",
+        "PublisherExists": "Publisher name already exists",
+        "InvalidPublisherId": "Invalid publisher ID",
+        "PublisherNotFound": "Publisher not found",
+        "CannotDeletePublisher": "Cannot delete publisher, it has associated records in other tables",
+
+        "FailedCreateSpeciality": "Failed to create Speciality",
+        "SpecialityExists": "Speciality name already exists",
+        "InvalidSpecialityId": "Invalid speciality ID",
+        "SpecialityNotFound": "Speciality not found",
+        "CannotDeleteSpeciality": "Cannot delete speciality, it has associated records in other tables",
+
+        "FailedCreateReviewSpeciality": "Failed to create review speciality",
+        "ReviewSpecialityExists": "Review speciality name already exists",
+        "InvalidReviewSpecialityId": "Invalid review speciality ID",
+        "ReviewSpecialityNotFound": "Review speciality not found",
+        "CannotDeleteReviewSpeciality": "Cannot delete review speciality, it has associated records in other tables",   
+
+        "FailedCreateTeam": "Failed to create team",
+        "TeamExists": "Team name already exists",
+        "InvalidTeamId": "Invalid team ID",
+        "TeamNotFound": "Team not found",
+        "CannotDeleteTeam": "Cannot delete team, it has associated records in other tables",
+
+        "FailedCreateLaboratory": "Failed to create laboratory",
+        "LaboratoryExists": "Laboratory name already exists",
+        "InvalidLaboratoryId": "Invalid laboratory ID",
+        "LaboratoryNotFound": "Laboratory not found",
+        "CannotDeleteLaboratory": "Cannot delete laboratory, it has associated records in other tables",
+
+        "FailedCreateEquipment": "Failed to create equipment",
+        "EquipmentExists": "Equipment name already exists",
+        "InvalidEquipmentId": "Invalid equipment ID",
+        "EquipmentNotFound": "Equipment not found",
+        "CannotDeleteEquipment": "Cannot delete equipment, it has associated records in other tables",
+      
+        "FailedCreateDoctoralStudent": "Failed to create doctoral student",
+        "DoctoralStudentExists": "Doctoral student name already exists",
+        "InvalidDoctoralStudentId": "Invalid doctoral student ID",
+        "DoctoralStudentNotFound": "Doctoral student not found",
+        "CannotDeleteDoctoralStudent": "Cannot delete doctoral student, it has associated records in other tables",
+        
+        "FailedCreateResearcher": "Failed to create researcher",
+        "ResearcherExists": "Researcher name already exists",
+        "InvalidResearcherId": "Invalid researcher ID",
+        "ResearcherNotFound": "Researcher not found",
+        "CannotDeleteResearcher": "Cannot delete researcher, it has associated records in other tables",
+        "DirectorExists": "A director already exists in this laboratory",
+        "DirectorLabChangeNotAllowed": "A director cannot change their laboratory",
+
+        "FailedCreatePublication": "Failed to create publication",
+        "PublicationExists": "Publication name already exists",
+        "InvalidPublicationId": "Invalid publication ID",
+        "PublicationNotFound": "Publication not found",
+        "CannotDeletePublication": "Cannot delete publication, it has associated records in other tables",
+
+        "FailedCreateCommunication": "Failed to create communication",
+        "CommunicationExists": "Communication name already exists",
+        "InvalidCommunicationId": "Invalid communication ID",
+        "CommunicationNotFound": "Communication not found",
+        "CannotDeleteCommunication": "Cannot delete communication, it has associated records in other tables",
+
+        "FailedCreateReview": "Failed to create review",
+        "ReviewExists": "Review name already exists",
+        "InvalidReviewId": "Invalid review ID",
+        "ReviewNotFound": "Review not found",
+        "CannotDeleteReview": "Cannot delete review, it has associated records in other tables",
+
+        "InvalidSuperviseId": "Invalid supervise ID provided",
+        "ResearcherAlreadySupervising": "The researcher is already supervising another student",
+        "StudentAlreadySupervised": "The student is already being supervised by another researcher",
+        "InvalidEndDate": "The end date cannot be before the start date",
+        "SuperviseExists": "A supervision record already exists with the same researcher and student",
+        "SuperviseNotFound": "Supervision record not found",
+        "CannotDeleteSupervise": "This supervision cannot be deleted due to existing dependencies",
+        "SupervisionSetPast": "Supervision already exists",
+
+        "EquipmentAlreadyAssignedResearcher": "The equipment is already assigned by another researcher, and has not been returned yet",
+        "InvalidReturnDate": "The return date cannot be earlier than the assign date",
+        "InvalidAssignmentId": "The provided assignment ID is invalid",
+        "AssignmentResearcherNotFound": "Researcher assignment not found",
+        "ResearcherAlreadyAssignedPast": "The researcher has already been assigned this equipment in the past",
+
+        "PublicationResearcherAlreadyAssigned": "This publication is already assigned to the researcher",
+        "InvalidPublishResearcherPubId": "The provided researcher publication assignment ID is invalid",
+        "PublishResearcherPubNotFound": "Researcher publication assignment not found",
+
+        "CommunicationResearcherAlreadyAssigned": "This communication is already assigned to the researcher",
+        "InvalidPublishResearcherCommId": "The provided researcher communication assignment ID is invalid",
+        "PublishResearcherCommNotFound": "Researcher communication assignment not found",
+
+        "PublicationDoctoralStudentAlreadyAssigned": "This publication is already assigned to the doctoral student.",
+        "InvalidPublishDoctoralStudentPubId": "The provided doctoral student publication assignment ID is invalid.",
+        "PublishDoctoralStudentPubNotFound": "Doctoral student publication assignment not found.",
+
+        "CommunicationDoctoralStudentAlreadyAssigned": "This communication is already assigned to the doctoral student.",
+        "InvalidPublishDoctoralStudentCommId": "The provided doctoral student communication assignment ID is invalid.",
+        "PublishDoctoralStudentCommNotFound": "Doctoral student communication assignment not found.",
+
+        "SpecialityAlreadyAssigned": "This speciality is already assigned to the review",
+        "InvalidHasSpecialityId": "The provided speciality assignment ID is invalid",
+        "HasSpecialityNotFound": "Speciality assignment not found",
+
+        "CategoryAlreadyAssigned": "This category is already assigned to the review",
+        "InvalidHasCategoryId": "The provided category assignment ID is invalid",
+        "HasCategoryNotFound": "Category assignment not found",
+
+        "EquipmentAlreadyAssignedDoctoralStudent": "This equipment is already assigned by another doctoral student, and has not been returned yet.",
+        "AssignmentDoctoralStudentNotFound": "Doctoral student assignment not found.",
+        "DoctoralStudentAlreadyAssignedPast": "The doctoral student has already been assigned this equipment in the past",
+        
+        "FailedCreateRole": "Failed to create role",
+        "RoleExists": "Role name already exists",
+        "InvalidRoleId": "Invalid role ID",
+        "RoleNotFound": "Role not found",
+        "CannotDeleteRole": "Cannot delete role, it has associated records in other tables",
+
+        "FailedCreateUser": "Failed to create user",
+        "UserExists": "User name already exists",
+        "InvalidUserId": "Invalid user ID",
+        "UserNotFound": "User not found",
+        "CannotDeleteUser": "Cannot delete user, it has associated records in other tables",
+
+        "LogoutFailed": "Logout failed",
+        "Unauthorized": "Unauthorized",
+        "ForbiddenAccessDenied": "Forbidden - Access denied",
+
+        "AttributeNotAllowed": "Unknown attribute is not allowed",
+        "InternalServerError": "An internal server error occurred. Please try again later",
+        "RouteNotFound": "Route not found"
+    },
+    "success": {
+        "CategoryEmptyTable": "No categories found",
+        "CategoryCreated": "Category created successfully",
+        "CategoryUpdated": "Category updated successfully",
+        "CategoryDeleted": "Category deleted successfully",
+
+        "DepartmentEmptyTable": "No departments found",
+        "DepartmentCreated": "Department created successfully",
+        "DepartmentUpdated": "Department updated successfully",
+        "DepartmentDeleted": "Department deleted successfully",
+
+        "DomainEmptyTable": "No domains found",
+        "DomainCreated": "Domain created successfully",
+        "DomainUpdated": "Domain updated successfully",
+        "DomainDeleted": "Domain deleted successfully",
+
+        "FacultyEmptyTable": "No faculties found",
+        "FacultyCreated": "Faculty created successfully",
+        "FacultyUpdated": "Faculty updated successfully",
+        "FacultyDeleted": "Faculty deleted successfully",
+
+        "FunctionEmptyTable": "No functions found",
+        "FunctionCreated": "Function created successfully",
+        "FunctionUpdated": "Function updated successfully",
+        "FunctionDeleted": "Function deleted successfully",
+
+        "ProductionTypeEmptyTable": "No production types found",
+        "ProductionTypeCreated": "Production type created successfully",
+        "ProductionTypeUpdated": "Production type updated successfully",
+        "ProductionTypeDeleted": "Production type deleted successfully",
+
+        "PublisherEmptyTable": "No publishers found",
+        "PublisherCreated": "Publisher created successfully",
+        "PublisherUpdated": "Publisher updated successfully",
+        "PublisherDeleted": "Publisher deleted successfully",
+
+        "SpecialityEmptyTable": "No specialities found",
+        "SpecialityCreated": "Speciality created successfully",
+        "SpecialityUpdated": "Speciality updated successfully",
+        "SpecialityDeleted": "Speciality deleted successfully",
+
+        "ReviewSpecialityEmptyTable": "No review specialities found",
+        "ReviewSpecialityCreated": "review speciality created successfully",
+        "ReviewSpecialityUpdated": "review speciality updated successfully",
+        "ReviewSpecialityDeleted": "review speciality deleted successfully",
+
+        "TeamEmptyTable": "No teams found",
+        "TeamCreated": "Team created successfully",
+        "TeamUpdated": "Team updated successfully",
+        "TeamDeleted": "Team deleted successfully",
+
+        "LaboratoryEmptyTable": "No laboratories found",
+        "LaboratoryCreated": "Laboratory created successfully",
+        "LaboratoryUpdated": "Laboratory updated successfully",
+        "LaboratoryDeleted": "Laboratory deleted successfully",
+
+        "EquipmentEmptyTable": "No equipments found",
+        "EquipmentCreated": "Equipment created successfully",
+        "EquipmentUpdated": "Equipment updated successfully",
+        "EquipmentDeleted": "Equipment deleted successfully",
+
+        "DoctoralStudentEmptyTable": "No doctoral students found",
+        "DoctoralStudentCreated": "Doctoral student created successfully",
+        "DoctoralStudentUpdated": "Doctoral student updated successfully",
+        "DoctoralStudentDeleted": "Doctoral student deleted successfully",
+
+        "ResearcherEmptyTable": "No researchers found",
+        "ResearcherCreated": "Researcher created successfully",
+        "ResearcherUpdated": "Researcher updated successfully",
+        "ResearcherDeleted": "Researcher deleted successfully",
+
+        "PublicationEmptyTable": "No publications found",
+        "PublicationCreated": "Publication created successfully",
+        "PublicationUpdated": "Publication updated successfully",
+        "PublicationDeleted": "Publication deleted successfully",
+
+        "CommunicationEmptyTable": "No communications found",
+        "CommunicationCreated": "Communication created successfully",
+        "CommunicationUpdated": "Communication updated successfully",
+        "CommunicationDeleted": "Communication deleted successfully",
+
+        "ReviewEmptyTable": "No reviews found",
+        "ReviewCreated": "Review created successfully",
+        "ReviewUpdated": "Review updated successfully",
+        "ReviewDeleted": "Review deleted successfully",
+
+        "SuperviseEmptyTable": "No supervisions found",
+        "SuperviseCreated": "Supervision successfully created",
+        "SuperviseUpdated": "Supervision successfully updated",
+        "SuperviseDeleted": "Supervision successfully deleted",
+
+        "AssignmentResearcherEmptyTable": "No equipment assignments found.",
+        "AssignmentResearcherCreated": "The equipment has been successfully assigned to the researcher",
+        "AssignmentResearcherUpdated": "The assignment has been successfully updated",
+        "AssignmentResearcherDeleted": "The assignment has been successfully deleted",
+
+        "PublishResearcherPubCreated": "The publication has been successfully assigned to the researcher",
+        "PublishResearcherPubEmptyTable": "No researcher publication assignments found",
+        "PublishResearcherPubDeleted": "The researcher publication assignment has been successfully deleted",
+
+        "PublishResearcherCommCreated": "The communication has been successfully assigned to the researcher",
+        "PublishResearcherCommEmptyTable": "No researcher communication assignments found",
+        "PublishResearcherCommDeleted": "The researcher communication assignment has been successfully deleted",
+
+        "PublishDoctoralStudentPubCreated": "The publication has been successfully assigned to the doctoral student",
+        "PublishDoctoralStudentPubEmptyTable": "No doctoral student publication assignments found",
+        "PublishDoctoralStudentPubDeleted": "The doctoral student publication assignment has been successfully deleted",
+
+        "PublishDoctoralStudentCommCreated": "The communication has been successfully assigned to the doctoral student",
+        "PublishDoctoralStudentCommEmptyTable": "No doctoral student communication assignments found",
+        "PublishDoctoralStudentCommDeleted": "The doctoral student communication assignment has been successfully deleted",
+
+        "HasSpecialityCreated": "The speciality has been successfully assigned to the review",
+        "HasSpecialityEmptyTable": "No speciality assignments found",
+        "HasSpecialityDeleted": "The speciality assignment has been successfully deleted",
+
+        "HasCategoryCreated": "The category has been successfully assigned to the review.",
+        "HasCategoryEmptyTable": "No category assignments found.",
+        "HasCategoryDeleted": "The category assignment has been successfully deleted.",
+
+        "AssignmentDoctoralStudentCreated": "The equipment has been successfully assigned to the doctoral student",
+        "AssignmentDoctoralStudentUpdated": "The assignment has been successfully updated",
+        "AssignmentDoctoralStudentDeleted": "The assignment has been successfully deleted",
+        "AssignmentDoctoralStudentEmptyTable": "No equipment assignments found",
+
+        "RoleEmptyTable": "No roles found",
+        "RoleCreated": "Role created successfully",
+        "RoleUpdated": "Role updated successfully",
+        "RoleDeleted": "Role deleted successfully",
+
+        "UserEmptyTable": "No users found",
+        "UserCreated": "User created successfully",
+        "UserUpdated": "User updated successfully",
+        "UserDeleted": "User deleted successfully",
+
+        "LoginSuccess": "Login successful",
+        "LogoutSuccess": "Logged out successfully"
+    },
+    "excel": {
+        "FailedDoctoralStudentsAssignments": "Failed to export doctoral students assignments",
+        "FailedDoctoralStudentsAssignmentsByLab": "Failed to export doctoral students assignments by laboratory",
+        "FailedResearchersAssignments": "Failed to export researchers assignments",
+        "FailedResearchersAssignmentsByLab": "Failed to export researchers assignments by laboratory",
+        "FailedCommunication": "Failed to export communications",
+        "FailedCommunicationByLab": "Failed to export communications by laboratory",
+        "FailedDoctoralStudents": "Failed to export doctoral students",
+        "FailedDoctoralStudentsByLab": "Failed to export doctoral students by laboratory",
+        "FailedResearchers": "Failed to export researchers",
+        "FailedResearchersByLab": "Failed to export researchers by laboratory",
+        "FailedEquipments": "Failed to export equipments",
+        "FailedEquipmentsByLab": "Failed to export equipments by laboratory",
+        "FailedLaboratories": "Failed to export laboratories",
+        "FailedLaboratoriesByFac": "Failed to export laboratories by faculty",
+        "FailedPublications": "Failed to export publications",
+        "FailedPublicationsByLab": "Failed to export publications by laboratory",
+        "FailedSupervisions": "Failed to export supervisions",
+        "FailedSupervisionsByLab": "Failed to export supervisions by laboratory",
+        "FailedTeams": "Failed to export teams"
+    }
+  }

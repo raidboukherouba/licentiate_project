@@ -1,0 +1,235 @@
+import { useState, useEffect } from "react";
+import debounce from "lodash.debounce";
+import { fetchDomains, deleteDomain, updateDomain, createDomain } from "../services/domainService";
+import DomainTable from "@/components/domain/domain-table";
+import DomainCards from "@/components/domain/domain-cards";
+import TablePagination from "@/components/table-pagination";
+import DomainNavTable from "@/components/domain/domain-nav-table";
+import { Toaster, toast } from "sonner";
+import { AddDomainModal } from "@/components/domain/add-modal";
+import { EditDomainModal } from "@/components/domain/edit-modal";
+import { DeleteDomainModal } from "@/components/domain/delete-modal";
+import { CircleAlert, CircleCheck } from 'lucide-react';
+
+// Define Domain type
+interface Domain {
+  domain_id: number;
+  domain_name: string;
+  domain_abbr?: string | null;
+}
+
+export default function DomainPage() {
+  const [domains, setDomains] = useState<Domain[]>([]);
+  const [totalPages, setTotalPages] = useState<number>(0);
+  const [totalItems, setTotalItems] = useState<number>(0);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [itemsPerPage, setItemsPerPage] = useState<number>(10);
+  const [sortBy, setSortBy] = useState<string>("domain_name");
+  const [order, setOrder] = useState<"asc" | "desc">("asc");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+
+  const [isEditModalOpen, setIsEditModalOpen] = useState<boolean>(false);
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState<boolean>(false);
+  const [isAddModalOpen, setIsAddModalOpen] = useState<boolean>(false);
+  const [selectedDomain, setSelectedDomain] = useState<Domain | null>(null);
+
+  const debouncedLoadDomains = debounce(() => loadDomains(), 300);
+
+  useEffect(() => {
+    debouncedLoadDomains();
+    return () => debouncedLoadDomains.cancel();
+  }, [currentPage, itemsPerPage, sortBy, order, searchQuery]);
+
+  async function loadDomains() {
+    try {
+      const data = await fetchDomains(
+        currentPage,
+        itemsPerPage,
+        sortBy,
+        order,
+        searchQuery
+      );
+      setDomains(data.domains);
+      setTotalPages(data.totalPages);
+      setTotalItems(data.totalItems);
+    } catch (error) {
+      console.error((error as Error).message);
+    }
+  }
+
+  const toggleSort = (column: string) => {
+    if (sortBy === column) {
+      setOrder(order === "asc" ? "desc" : "asc");
+    } else {
+      setSortBy(column);
+      setOrder("asc");
+    }
+  };
+
+  const openEditModal = (domain: Domain) => {
+    setSelectedDomain(domain);
+    setIsEditModalOpen(true);
+  };
+
+  const openDeleteModal = (domain: Domain) => {
+    setSelectedDomain(domain);
+    setIsDeleteModalOpen(true);
+  };
+
+  const openAddModal = () => {
+    setIsAddModalOpen(true);
+  };
+
+  const closeEditModal = () => {
+    setIsEditModalOpen(false);
+    setSelectedDomain(null);
+  };
+
+  const closeDeleteModal = () => {
+    setIsDeleteModalOpen(false);
+    setSelectedDomain(null);
+  };
+
+  const closeAddModal = () => {
+    setIsAddModalOpen(false);
+  };
+
+  const handleDelete = async (): Promise<void> => {
+    if (!selectedDomain) {
+      toast.error("No domain selected", {
+        icon: <CircleAlert className="w-4 h-4 text-red-600" />,
+      });
+      return;
+    }
+    try {
+      const response = await deleteDomain(selectedDomain.domain_id);
+      if ("message" in response) {
+        toast.success(response.message, {
+          icon: <CircleCheck className="w-4 h-4 text-green-600" />,
+        });
+        loadDomains();
+      }
+    } 
+    catch (error: any) {
+      const errorMessage = error.response?.data?.error || "An unexpected error occurred";
+      toast.error(errorMessage, {
+        icon: <CircleAlert className="w-4 h-4 text-red-600" />,
+      });
+    } finally {
+      closeDeleteModal();
+    }
+  };
+  
+
+  const handleEdit = async (domainName: string, domainAbbr?: string): Promise<void> => {
+    if (!selectedDomain) {
+      toast.error("No domain selected", {
+        icon: <CircleAlert className="w-4 h-4 text-red-600" />,
+      });
+      return;
+    }
+    try {
+      const response = await updateDomain(selectedDomain.domain_id, domainName, domainAbbr);
+  
+      if ("message" in response) {
+        toast.success(response.message, {
+          icon: <CircleCheck className="w-4 h-4 text-green-600" />,
+        });
+        loadDomains();
+      }
+    } catch (error: any) {
+      const errorMessage = error.response?.data?.error || "An unexpected error occurred";
+      toast.error(errorMessage, {
+        icon: <CircleAlert className="w-4 h-4 text-red-600" />,
+      });
+    } finally {
+      closeEditModal();
+    }
+  };  
+
+  const handleAdd = async (domainName: string, domainAbbr?: string): Promise<void> => {
+    try {
+      const response = await createDomain(domainName, domainAbbr);
+  
+      if ("message" in response) {
+        toast.success(response.message, {
+          icon: <CircleCheck className="w-4 h-4 text-green-600" />,
+        });
+        loadDomains();
+      }
+    } catch (error: any) {
+      const errorMessage = error.response?.data?.error || "An unexpected error occurred";
+      toast.error(errorMessage, {
+        icon: <CircleAlert className="w-4 h-4 text-red-600" />,
+      });
+    } finally {
+      closeAddModal();
+    }
+  };
+  
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
+
+  return (
+    <>
+      <DomainNavTable
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        itemsPerPage={itemsPerPage}
+        setItemsPerPage={setItemsPerPage}
+        setCurrentPage={setCurrentPage}
+        openAddModal={openAddModal}
+      />
+
+      <div className="hidden md:block">
+        <DomainTable
+          domains={domains}
+          currentPage={currentPage}
+          itemsPerPage={itemsPerPage}
+          toggleSort={toggleSort}
+          openEditModal={openEditModal}
+          openDeleteModal={openDeleteModal}
+        />
+      </div>
+
+      <div className="md:hidden">
+        <DomainCards
+          domains={domains}
+          currentPage={currentPage}
+          itemsPerPage={itemsPerPage}
+          openEditModal={openEditModal}
+          openDeleteModal={openDeleteModal}
+        />
+      </div>
+
+      <TablePagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
+
+      <AddDomainModal
+        isOpen={isAddModalOpen}
+        onClose={closeAddModal}
+        onAdd={handleAdd}
+      />
+
+      <EditDomainModal
+        isOpen={isEditModalOpen}
+        onClose={closeEditModal}
+        onEdit={handleEdit}
+        selectedDomain={selectedDomain}
+      />
+
+      <DeleteDomainModal
+        isOpen={isDeleteModalOpen}
+        onClose={closeDeleteModal}
+        onDelete={handleDelete}
+      />
+
+      <Toaster position="bottom-right" />
+    </>
+  );
+}
