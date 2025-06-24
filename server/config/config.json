@@ -15,10 +15,17 @@
     "dialect": "postgres"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "username": "lab_database_8i9r_user",
+    "password": "88dKCBxcFMdZEAimAjihroQl9u6yHlXB",
+    "database": "lab_database_8i9r",
+    "host": "dpg-d1d9co15pdvs73ahnm30-a",
+    "dialect": "postgres",
+    "dialectOptions": {
+    "ssl": {
+      "require": true,
+      "rejectUnauthorized": false
+      }
+    },
+    "logging": false
   }
 }

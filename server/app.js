@@ -12,6 +12,9 @@ const passport = require('passport');
 const initializePassport = require('./config/passport');
 const { ensureAuthenticated, ensureRole } = require('./middlewares/authMiddleware');
 
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+const { sequelize } = require('./models'); // or wherever your Sequelize instance is
+
 const facultyRouter = require("./routes/faculty");
 const domainRouter = require("./routes/domain");
 const departmentRouter = require("./routes/department");
@@ -66,7 +69,7 @@ const limiter = rateLimit({
 // Middleware
 app.use(middleware.handle(i18next)); // Middleware to detect and use language
 app.use(cors({
-    origin: "http://localhost:5173", // Explicitly allow your frontend's origin
+    origin: "https://lab-flow.netlify.app", // Explicitly allow your frontend's origin
     credentials: true, // Allow cookies and authentication headers
 }));
 
@@ -83,12 +86,27 @@ app.use(limiter);
 
 // Add Session middleware (needed for Passport sessions)
 // secret: process.env.SESSION_SECRET || 'super_secret_key',
+
+const sessionStore = new SequelizeStore({
+  db: sequelize,
+});
+
+app.set('trust proxy', 1); 
+
 app.use(session({
-    secret: process.env.SESSION_SECRET,
-    resave: false,
-    saveUninitialized: false,
-    cookie: { secure: false, maxAge: 24 * 60 * 60 * 1000 }, // Adjust as needed
+  secret: process.env.SESSION_SECRET,
+  store: sessionStore,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    secure: process.env.NODE_ENV === 'production', // true in prod, false in dev
+    httpOnly: true,
+    sameSite: 'none',
+    maxAge: 24 * 60 * 60 * 1000, // 1 day
+  }
 }));
+
+sessionStore.sync();
 
 // Initialize Passport
 app.use(passport.initialize());
